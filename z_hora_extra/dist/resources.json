@@ -1,0 +1,165 @@
+{
+    "resources": [
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/AddDocument.controller.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "controller/BaseController.js"
+        },
+        {
+            "name": "controller/ErrorHandler.js"
+        },
+        {
+            "name": "controller/NotFound.controller.js"
+        },
+        {
+            "name": "controller/Object.controller.js"
+        },
+        {
+            "name": "controller/Worklist.controller.js"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "localService/CopyOfmetadata.xml"
+        },
+        {
+            "name": "localService/manifest.json"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "localService/mockdata/Hora_ExtraSet.json"
+        },
+        {
+            "name": "localService/mockserver.js"
+        },
+        {
+            "name": "model/formatter.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "test/integration/AllJourneys.js"
+        },
+        {
+            "name": "test/integration/FLPIntegrationJourney.js"
+        },
+        {
+            "name": "test/integration/NavigationJourney.js"
+        },
+        {
+            "name": "test/integration/NotFoundJourney.js"
+        },
+        {
+            "name": "test/integration/ObjectJourney.js"
+        },
+        {
+            "name": "test/integration/opaTests.qunit.html"
+        },
+        {
+            "name": "test/integration/pages/App.js"
+        },
+        {
+            "name": "test/integration/pages/Browser.js"
+        },
+        {
+            "name": "test/integration/pages/Common.js"
+        },
+        {
+            "name": "test/integration/pages/NotFound.js"
+        },
+        {
+            "name": "test/integration/pages/Object.js"
+        },
+        {
+            "name": "test/integration/pages/shareOptions.js"
+        },
+        {
+            "name": "test/integration/pages/Worklist.js"
+        },
+        {
+            "name": "test/integration/WorklistJourney.js"
+        },
+        {
+            "name": "test/mock_preview_sapui5.html"
+        },
+        {
+            "name": "test/sandbox.js"
+        },
+        {
+            "name": "test/test.html"
+        },
+        {
+            "name": "test/testFLP.html"
+        },
+        {
+            "name": "test/testFLPService.html"
+        },
+        {
+            "name": "test/testsuite.qunit.html"
+        },
+        {
+            "name": "test/unit/allTests.js"
+        },
+        {
+            "name": "test/unit/controller/App.controller.js"
+        },
+        {
+            "name": "test/unit/controller/Worklist.controller.js"
+        },
+        {
+            "name": "test/unit/helper/FakeI18nModel.js"
+        },
+        {
+            "name": "test/unit/model/formatter.js"
+        },
+        {
+            "name": "test/unit/model/models.js"
+        },
+        {
+            "name": "test/unit/unitTests.qunit.html"
+        },
+        {
+            "name": "view/AddDocument.view.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/CopyOfAddDocument.view.xml"
+        },
+        {
+            "name": "view/NameRequiredDialog.fragment.xml"
+        },
+        {
+            "name": "view/NotFound.view.xml"
+        },
+        {
+            "name": "view/Object.view.xml"
+        },
+        {
+            "name": "view/ObjectNotFound.view.xml"
+        },
+        {
+            "name": "view/Worklist.view.xml"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        }
+    ]
+}

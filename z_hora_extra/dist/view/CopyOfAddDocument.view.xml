@@ -1,0 +1,64 @@
+<mvc:View controllerName="z_hora_extra.controller.AddDocument" xmlns:c="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m" xmlns:com="sap.ui.commons">
+	<Page class="sapUiFioriObjectPage" navButtonPress="onNavBack" showNavButton="true" title="Create Extra Time">
+		<l:Grid defaultSpan="L12 M12 S12" width="auto">
+			<l:content>
+				<f:SimpleForm class="editableForm" columnsL="1" columnsM="1" editable="true" emptySpanL="4" emptySpanM="4" id="idAddProductForm"
+					labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="800">
+					<f:content>
+						<!-- Basic info -->
+						<c:Title level="H2" text="New Item"/>
+						<Label text=""/>
+						<!--<DateTimeInput type="Date" value=""/>	-->
+						<u:Calendar id="calendar" width="420px" select="dateFromString"/>
+						<Label
+						text="Selected Date (yyyy-mm-dd):"
+						class="labelMarginLeft" />
+						<Text
+						id="selectedDate"
+						text="No Date Selected"
+						class="labelMarginLeft"/>	
+						<Label text="Quantity of Hours"/>
+						<Input value= "{path:'newDocument>/Quantity'}" liveChange = "onInput" width="50px"/>
+						<!--<Input value= "{path:'newDocument>/Quantity', type:'sap.ui.model.type.Integer'}" liveChange = "onInput" width="50px"/>-->
+						<!--<Label text="Approver"/>-->
+						<!--<Input value=""-->
+						<!--width="100px"-->
+						<!--id="approverInput"-->
+						<!--type="Text"-->
+						<!--placeholder="Enter Approver ..."-->
+						<!--showSuggestion="true"-->
+						<!--suggest="handleSuggest"-->
+						<!--suggestionItems="{/Hora_ExtraSet}" >-->
+						<!--<suggestionItems>-->
+						<!--	<c:Item text="{Name}" />-->
+						<!--</suggestionItems>-->
+						<!--</Input>	-->
+						<!--<ComboBox-->
+						<!--items="{ path: '/Hora_ExtraSet'}">-->
+						<!--	<c:Item key="{Entryid}" text="{Zdate_string}"/>-->
+						<!--</ComboBox>-->
+						<!--<com:DropdownBox items="{ path: '/Hora_ExtraSet'}" width="130px">-->
+						<!--	<c:ListItem key="{Entryid}" text="{Zdate_string}"/>-->
+						<!--</com:DropdownBox>-->
+						<Label text="Weekend or Hollyday?"/>
+						<CheckBox id="chkWknd" enabled="true" selected="false" select ="checkDone"/>
+						<Label text="Night Shift?"/>
+						<CheckBox activeHandling="true" id="chkNight" selected="false" select="checkDone"/>
+						<Label text="Reason"/>
+						<TextArea value="{newDocument>/Reason}" />
+						<Label text="Comments"/>
+						<TextArea value="{newDocument>/Comments}"/>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button press="onSave" text="Create" type="Emphasized"/>
+				<Button press="onCancel" text="Cancel"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

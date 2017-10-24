@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="Z_HORA_EXTRA_SRV" sap:schema-version="1" xml:lang="en" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="Hora_Extra" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Entryid"/>
+				</Key>
+				<Property MaxLength="7" Name="Entryid" Nullable="false" Type="Edm.String" sap:creatable="false" sap:label="ID" sap:updatable="false"/>
+				<Property MaxLength="12" Name="Employeeid" Nullable="false" Type="Edm.String" sap:creatable="false" sap:label="User" sap:updatable="false"/>
+				<Property MaxLength="40" Name="Name" Nullable="false" Type="Edm.String" sap:creatable="false" sap:label="Full Name" sap:updatable="false"/>
+				<Property MaxLength="40" Name="Zdate_string" Nullable="false" Type="Edm.String" sap:creatable="false" sap:label="Formated Date"
+					sap:updatable="false"/>
+				<Property MaxLength="8" Name="Zdate" Nullable="false" Type="Edm.String" sap:label="Date"/>
+				<Property MaxLength="3" Name="Quantity" Nullable="false" Type="Edm.String" sap:label="Quantity"/>
+				<Property Name="Night" Type="Edm.Boolean" sap:label="Night Shiift"/>
+				<Property Name="WeekendHollydays" Type="Edm.Boolean" sap:label="Weekend Shift"/>
+				<Property MaxLength="100" Name="Reason" Type="Edm.String" sap:filterable="false" sap:label="Reason" sap:sortable="false"/>
+				<Property MaxLength="8" Name="Status" Type="Edm.String" sap:creatable="false" sap:label="Status"/>
+				<Property MaxLength="8" Name="CreDate" Nullable="false" Type="Edm.String" sap:creatable="false" sap:label="Creation Date"
+					sap:updatable="false"/>
+				<Property MaxLength="8" Name="Managerid" Nullable="false" Type="Edm.String" sap:creatable="false" sap:label="Manager ID"/>
+				<Property MaxLength="100" Name="Comments" Type="Edm.String" sap:filterable="false" sap:label="Comments" sap:sortable="false"/>
+			</EntityType>
+			<EntityContainer Name="Z_HORA_EXTRA_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet EntityType="Z_HORA_EXTRA_SRV.Hora_Extra" Name="Hora_ExtraSet" sap:content-version="1" sap:creatable="false" sap:deletable="false"
+					sap:pageable="false" sap:updatable="false"/>
+			</EntityContainer>
+			<atom:link href="http://10.96.56.25:50001/sap/opu/odata/sap/Z_HORA_EXTRA_SRV/$metadata" rel="self" xmlns:atom="http://www.w3.org/2005/Atom"/>
+			<atom:link href="http://10.96.56.25:50001/sap/opu/odata/sap/Z_HORA_EXTRA_SRV/$metadata" rel="latest-version"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

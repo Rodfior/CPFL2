@@ -1,0 +1,116 @@
+[{
+	"Entryid": "Entryid 1",
+	"Employeeid": "Employeeid 1",
+	"Name": "Name 1",
+	"Zdate_string": "Zdate_string 1",
+	"Zdate": "20141001",
+	"Quantity": "Quantity 1",
+	"Night": true,
+	"WeekendHollydays": true,
+	"Reason": "Reason 1",
+	"Status": "Approved",
+	"CreDate": "20161018",
+	"Managerid": "Managerid 1",
+	"Comments": "Comments 1",
+	"__metadata": {
+		"uri": "Hora_ExtraSet('Entryid 1')",
+		"type": "Z_HORA_EXTRA_SRV.Hora_Extra"
+	}
+}, {
+	"Entryid": "Entryid 2",
+	"Employeeid": "Employeeid 2",
+	"Name": "Name 2",
+	"Zdate_string": "Zdate_string 2",
+	"Zdate": "20141002",
+	"Quantity": "Quantity 2",
+	"Night": true,
+	"WeekendHollydays": true,
+	"Reason": "Reason 2",
+	"Status": "APPROVED",
+	"CreDate": "20161018",
+	"Managerid": "Managerid 2",
+	"Comments": "Comments 2",
+	"__metadata": {
+		"uri": "Hora_ExtraSet('Entryid 2')",
+		"type": "Z_HORA_EXTRA_SRV.Hora_Extra"
+	}
+}, {
+	"Entryid": "Entryid 3",
+	"Employeeid": "Employeeid 3",
+	"Name": "Name 3",
+	"Zdate_string": "Zdate_string 3",
+	"Zdate": "20141003",
+	"Quantity": "Quantity 3",
+	"Night": false,
+	"WeekendHollydays": true,
+	"Reason": "Reason 3",
+	"Status": "Rejected",
+	"CreDate": "20161018",
+	"Managerid": "Managerid 3",
+	"Comments": "Comments 3",
+	"__metadata": {
+		"uri": "Hora_ExtraSet('Entryid 3')",
+		"type": "Z_HORA_EXTRA_SRV.Hora_Extra"
+	}
+}, {
+	"Entryid": "Entryid 4",
+	"Employeeid": "Employeeid 4",
+	"Name": "Name 4",
+	"Zdate_string": "Zdate_string 4",
+	"Zdate": "20141004",
+	"Quantity": "Quantity 4",
+	"Night": true,
+	"WeekendHollydays": false,
+	"Reason": "Reason 4",
+	"Status": "REJECTED",
+	"CreDate": "20161018",
+	"Managerid": "Managerid 4",
+	"Comments": "Comments 4",
+	"__metadata": {
+		"uri": "Hora_ExtraSet('Entryid 4')",
+		"type": "Z_HORA_EXTRA_SRV.Hora_Extra"
+	}
+}, {
+	"Entryid": "Entryid 5",
+	"Employeeid": "Employeeid 5",
+	"Name": "Name 5",
+	"Zdate_string": "Zdate_string 5",
+	"Zdate": "20141005",
+	"Quantity": "Quantity 5",
+	"Night": true,
+	"WeekendHollydays": false,
+	"Reason": "Reason 5",
+	"Status": "Status 5",
+	"CreDate": "20161018",
+	"Managerid": "Managerid 5",
+	"Comments": "Comments 5",
+	"__metadata": {
+		"uri": "Hora_ExtraSet('Entryid 5')",
+		"type": "Z_HORA_EXTRA_SRV.Hora_Extra"
+	}
+}, {
+	"Entryid": "Entryid 6",
+	"Employeeid": "Employeeid 6",
+	"Name": "Name 6",
+	"Zdate_string": "Zdate_string 6",
+	"Zdate": "20141006",
+	"Quantity": "Quantity 6",
+	"Night": false,
+	"WeekendHollydays": true,
+	"Reason": "Reason 6",
+	"Status": "Status 6",
+	"CreDate": "20161018",
+	"Managerid": "Managerid 6",
+	"Comments": "Comments 6",
+	"__metadata": {
+		"uri": "Hora_ExtraSet('Entryid 6')",
+		"type": "Z_HORA_EXTRA_SRV.Hora_Extra"
+	}
+}, {
+	"Entryid": "Entryid 7",
+	"Employeeid": "I822243",
+	"Name": "Rodrigo",
+	"Zdate": "20160108",
+	"Quantity": "20",
+	"Status": "APPROVED"
+}]

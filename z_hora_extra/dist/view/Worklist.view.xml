@@ -1,0 +1,53 @@
+<mvc:View controllerName="z_hora_extra.controller.Worklist" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic" xmlns="sap.m">
+	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>worklistViewTitle}">
+		<semantic:content>
+			<PullToRefresh id="pullToRefresh" refresh="onRefresh"/>
+			<Table busyIndicatorDelay="{worklistView>/tableBusyDelay}" class="sapUiResponsiveMargin" growing="true" growingScrollToLoad="true"
+				id="table" items="{ path: '/Hora_ExtraSet' }" noDataText="{worklistView>/tableNoDataText}" updateFinished="onUpdateFinished" width="auto">
+				<headerToolbar>
+					<Toolbar id="toolbar">
+						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}"/>
+						<Button ariaDescribedBy="defaultButtonDescription genericButtonDescription" id="createButton" press="onPress1" text="New Entry"
+							type="Emphasized"></Button>
+						<ToolbarSpacer/>
+						<SearchField id="searchField" placeholder="Date: dd.MMM.yyyy" search="onSearch" tooltip="{i18n>worklistSearchTooltip}" width="auto"></SearchField>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="nameColumn">
+						<Text id="nameColumnTitle" text="{i18n>tableNameColumnTitle}"/>
+					</Column>
+					<Column hAlign="End" id="unitNumberColumn">
+						<Text id="unitNumberColumnTitle" text="{i18n>tableUnitNumberColumnTitle}"/>
+					</Column>
+					<Column hAlign="End" id="statusNumberColumn">
+						<Text id="statusNumberColumnTitle" text="Status"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem press="onPress" type="Navigation">
+						<cells>
+							<!--		<ObjectIdentifier-->
+							<!--		title="{Zdate}"/>-->
+							<ObjectIdentifier
+								title="{ path: 'Zdate',  formatter: '.formatter.sformatDate' }"/>
+								<!--title="{ path: 'Zdate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium', source: { patern: 'yyyyMMdd' } } }"/>-->
+							<ObjectNumber number="{Quantity}" unit="{i18n>tableItemUnit}"/>
+							<ObjectStatus state="{path: 'Status', formatter: '.formatter.StatusState'}" text="{path: 'Status', formatter: '.formatter.StatusText'}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</semantic:content>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+		<semantic:shareInJamAction>
+			<semantic:ShareInJamAction id="shareInJam" press="onShareInJamPress" visible="{FLP>/isShareInJamActive}"/>
+		</semantic:shareInJamAction>
+		<semantic:saveAsTileAction>
+			<footerbar:AddBookmarkButton id="shareTile" title="{worklistView>/saveAsTileTitle}"/>
+		</semantic:saveAsTileAction>
+	</semantic:FullscreenPage>
+</mvc:View>

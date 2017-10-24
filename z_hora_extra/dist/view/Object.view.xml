@@ -1,0 +1,57 @@
+<mvc:View controllerName="z_hora_extra.controller.Object" xmlns:core="sap.ui.core" xmlns:footerbar="sap.ushell.ui.footerbar"
+	xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m">
+	<semantic:FullscreenPage busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}" id="page" navButtonPress="onNavBack"
+		showNavButton="true" title="{i18n>objectTitle}">
+		<semantic:content>
+			<ObjectHeader id="objectHeader" number="{Quantity}" numberUnit="{i18n>tableItemUnit}" title="{Name}">
+				<attributes>
+					<ObjectAttribute text="{ path: 'Zdate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { patern: 'yyyyMMdd' } } }"
+						title="Extra time related to"/>
+					<ObjectAttribute
+						text="{ path: 'CreDate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { patern: 'yyyyMMdd' } } }"
+						title="Creation date"/>
+				</attributes>
+				<statuses>
+					<!--<ObjectStatus title="Status" text="Approved" state="Success" />-->
+					<ObjectStatus state="{path: 'Status', formatter: '.formatter.StatusState'}" text="{path: 'Status', formatter: '.formatter.StatusText'}"
+						title="Status"/>
+				</statuses>
+			</ObjectHeader>
+			<IconTabBar class="sapUiResponsiveContentPadding" expanded="{device>/isNoPhone}" id="iconTabBar">
+				<items>
+					<IcontabFilter icon="sap-icon://hint">
+						<form:SimpleForm editable="true">
+							<form:content>
+								<core:Title
+									text="{Quantity} hours on { path: 'Zdate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'long', source: { patern: 'yyyyMMdd' } } } for employee {Name}"></core:Title>
+								<Label text="EmployeeID"/>
+								<Text text="{Employeeid}"/>
+								<!--<Label text="Night Shift"/>-->
+								<!--<Text text="{Night}"/>-->
+								<!--<Label text="Weekend"/>-->
+								<Label text="Weekend Shift"/>
+								<CheckBox enabled="false" selected="{WeekendHollydays}"/>
+								<Label text="Night Shift"/>
+								<CheckBox enabled="false" selected="{Night}"/>
+								<Label text="Reason"/>
+								<Text text="{Reason}"/>
+								<Label text="Comments"/>
+								<Text text="{Comments}"/>
+							</form:content>
+						</form:SimpleForm>
+					</IcontabFilter>
+				</items>
+			</IconTabBar>
+		</semantic:content>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+		<!--		<semantic:shareInJamAction>
+			<semantic:ShareInJamAction id="shareInJam" visible="{FLP>/isShareInJamActive}" press="onShareInJamPress"/>
+		</semantic:shareInJamAction>
+
+		<semantic:saveAsTileAction>
+			<footerbar:AddBookmarkButton id ="shareTile" title="{objectView>/saveAsTileTitle}" />
+		</semantic:saveAsTileAction>-->
+	</semantic:FullscreenPage>
+</mvc:View>
