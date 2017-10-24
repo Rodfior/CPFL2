@@ -7,7 +7,7 @@
 					labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="800">
 					<f:content>
 						<!-- Basic info -->
-						<c:Title level="H2" text="Ne Item"/>
+						<c:Title level="H2" text="New It"/>
 						<Label text=""/>
 						<!--<DateTimeInput type="Date" value=""/>	-->
 						<u:Calendar id="calendar" width="320px" select="dateFromString"/>
