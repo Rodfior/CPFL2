@@ -1,0 +1,91 @@
+{
+  "projectType": [
+    "com.watt.commonbuilder.sapui5clientbuild",
+    "sap.watt.uitools.ide.fiori"
+  ],
+  "generation": [
+    {
+      "templateId": "fioriexttemplate.extensionProject",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Wed, 18 Jan 2017 14:38:54 GMT"
+    },
+    {
+      "templateId": "fioriexttemplate.replaceservicecomponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Wed, 18 Jan 2017 14:52:57 GMT"
+    }
+  ],
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/ZEGI03_REDEFINITION_SRV",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "extensibility": {
+    "controllers": {
+      "App": "ZTWS%2fcontroller%2fApp.controller.js",
+      "Detail": "ZTWS%2fcontroller%2fDetail.controller.js",
+      "Master": "ZTWS%2fcontroller%2fMaster.controller.js"
+    },
+    "views": {
+      "App": "ZTWS%2fview%2fApp.view.xml",
+      "Detail": "ZTWS%2fview%2fDetail.view.xml",
+      "DetailNoObjectsAvailable": "ZTWS%2fview%2fDetailNoObjectsAvailable.view.xml",
+      "DetailObjectNotFound": "ZTWS%2fview%2fDetailObjectNotFound.view.xml",
+      "Master": "ZTWS%2fview%2fMaster.view.xml",
+      "NotFound": "ZTWS%2fview%2fNotFound.view.xml"
+    },
+    "fragments": {
+      "ViewSettingsDialog": "ZTWS%2fview%2fViewSettingsDialog.fragment.xml"
+    },
+    "type": "abaprep",
+    "shouldLinkComponentToManifest": true,
+    "component": "ZTWS%2fComponent.js",
+    "manifest": "ZTWS%2fmanifest.json",
+    "minUI5Version": "1.38.0",
+    "system": {
+      "name": "gm6",
+      "proxyUrlPrefix": "/destinations/gm6",
+      "sapClient": ""
+    },
+    "discoveryStatus": {
+      "csrfToken": "poCpW89X1whiedXR_2okRQ==",
+      "transports": "/destinations/gm6/sap/bc/adt/cts/transports",
+      "transportchecks": "/destinations/gm6/sap/bc/adt/cts/transportchecks",
+      "filestore_ui5_bsp": "/destinations/gm6/sap/bc/adt/filestore/ui5-bsp/objects",
+      "search": "/destinations/gm6/sap/bc/adt/repository/informationsystem/search",
+      "ui5_rt_version": "/destinations/gm6/sap/bc/adt/filestore/ui5-bsp/ui5-rt-version",
+      "description": "GM6",
+      "proxyUrlPrefix": "/destinations/gm6"
+    },
+    "BSPName": "ZTWS",
+    "namespace": "ws.com",
+    "resourceBundle": "i18n/i18n.properties",
+    "parentResourceRootUrl": "/destinations/gm6/sap/bc/ui5_ui5/sap/ZTWS"
+  },
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "buildRequired": true
+  }
+}
